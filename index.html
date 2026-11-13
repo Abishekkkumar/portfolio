@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abishekkumar M S — Full Stack Engineer</title>
+  <meta name="description" content="Full Stack Engineer (MEVN) building multi-tenant SaaS used by 100+ brands — returns & exchange, shipment tracking, integrations." />
+  <meta property="og:title" content="Abishekkumar M S — Full Stack Engineer" />
+  <meta property="og:description" content="I build the systems behind 100+ brands' orders." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abishekkumarms.vercel.app/" />
+  <meta property="og:image" content="https://abishekkumarms.vercel.app/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230a0b10'/><text x='16' y='22' font-family='Georgia' font-style='italic' font-size='16' fill='%23a78bfa' text-anchor='middle'>a.</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // hide-then-reveal only when JS runs; if the animation libs fail to load, show everything
+    document.documentElement.classList.add('js');
+    setTimeout(() => { if (!window.gsap) document.documentElement.classList.remove('js'); }, 3500);
+  </script>
+  <script type="importmap">
+    { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    } }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo" aria-label="Home">Abishekkumar<span>.</span></a>
+      <span class="avail mono"><span class="dot"></span>open to work</span>
+      <nav class="links" id="menu">
+        <a href="#about" data-sec="about">About</a>
+        <a href="#journey" data-sec="journey">Journey</a>
+        <a href="#work" data-sec="work">Work</a>
+        <a href="#projects" data-sec="projects">Projects</a>
+        <a href="resume.pdf" download="Abishekkumar_MS_Resume.pdf" class="resume">Resume ↓</a>
+      </nav>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <p class="eyebrow mono"><span class="dot"></span> status: shipping · Coimbatore, IN</p>
+      <h1 class="hero-title">
+        <span class="line"><span>Abishekkumar</span></span>
+        <span class="line"><span><em>M S</em></span></span>
+      </h1>
+      <p class="hero-sub">Full Stack Engineer. I build the systems behind <b>100+ brands'</b> orders — from the first click to the last mile.</p>
+      <div class="hero-meta mono">
+        <span>Vue.js</span><span>Node.js</span><span>MongoDB</span><span>Redis</span>
+      </div>
+      <a href="#about" class="scroll-hint mono">scroll to track the parcel ↓</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="section-tag mono">01 · Order placed</div>
+      <h2 class="reveal">I own features <em>end to end</em> — from what merchants need, to production.</h2>
+      <p class="reveal lead">At Cobay I build a Shopify order-management platform: multi-tenant returns & exchanges, branded shipment tracking, and the integrations that hold it together. I care about the unglamorous parts — retries, edge cases, and code that still makes sense in six months.</p>
+      <div class="stats">
+        <div class="stat reveal"><b data-count="100">0</b><span>brands on the platform</span></div>
+        <div class="stat reveal"><b data-count="30">0</b><span>orgs on Returns &amp; Exchange</span></div>
+        <div class="stat reveal"><b data-count="50">0</b><span>storefronts with live tracking</span></div>
+      </div>
+    </section>
+
+    <!-- JOURNEY (pinned horizontal) -->
+    <section class="journey" id="journey">
+      <div class="journey-pin">
+        <div class="section-tag mono">02 · In transit</div>
+        <div class="track">
+          <div class="route"><div class="route-fill"></div></div>
+          <article class="stop">
+            <span class="mono when">2021 — 2025</span>
+            <h3>SASTRA University</h3>
+            <p>B.Tech. Taught myself software alongside — and never stopped.</p>
+          </article>
+          <article class="stop">
+            <span class="mono when">Jun — Oct 2025</span>
+            <h3>Full Stack Intern · Cobay</h3>
+            <p>Shipped features and fixes on the core Shopify app. Converted to full-time.</p>
+          </article>
+          <article class="stop">
+            <span class="mono when">Oct 2025 — now</span>
+            <h3>Full Stack Engineer · Cobay</h3>
+            <p>Returns &amp; Exchange, Shipment Tracking, Duplicate Order — each built end to end on MEVN.</p>
+          </article>
+          <article class="stop next">
+            <span class="mono when">next stop</span>
+            <h3>Your team?</h3>
+            <p>Looking for product engineering teams solving real problems at scale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="section-tag mono">03 · Out for delivery</div>
+      <h2 class="reveal">Selected work</h2>
+      <div class="cards">
+        <article class="card tilt">
+          <div class="card-top mono"><span>01</span><span>multi-tenant · 2 months</span></div>
+          <h3>Returns &amp; Exchange</h3>
+          <p>Configurable per brand: per-reason proof rules, independent return &amp; exchange policies, and a branded tracking page on custom subdomains.</p>
+          <div class="pipeline mono">
+            <span>Request</span><span>Approved</span><span>Pickup</span><span>Transit</span><span>Delivered</span><span>Received</span><span>Closed</span>
+          </div>
+          <ul class="tags mono"><li>Vue</li><li>Node</li><li>MongoDB</li><li>Webhooks</li></ul>
+        </article>
+        <article class="card tilt">
+          <div class="card-top mono"><span>02</span><span>embedded in Shopify</span></div>
+          <h3>Branded Shipment Tracking</h3>
+          <p>A customer-facing tracking page inside merchant storefronts. Dual login (AWB, or Order ID + phone) and a branding panel so every store looks like itself.</p>
+          <ul class="tags mono"><li>Vue</li><li>Express</li><li>Shopify</li><li>Theming</li></ul>
+        </article>
+        <article class="card tilt">
+          <div class="card-top mono"><span>03</span><span>merchant productivity</span></div>
+          <h3>One-click Duplicate Order</h3>
+          <p>Opens a pre-filled order with line items, customer and shipping copied — edit, then save. No more re-entering repeat orders.</p>
+          <ul class="tags mono"><li>Vue</li><li>REST</li><li>MongoDB</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="section-tag mono">04 · Side builds</div>
+      <h2 class="reveal">Things I built for fun <em>(and production)</em></h2>
+
+      <article class="project">
+        <div class="project-text">
+          <span class="mono when">2025 · Gmail API · Slack · Groq · Redis · Vercel</span>
+          <h3>Email AI Assistant</h3>
+          <p>Watches Gmail in real time, drafts a reply with Llama 3.1, and posts it to Slack with one-click Approve / Edit. Redis dedup makes sure every email is processed exactly once.</p>
+        </div>
+        <svg class="flow" viewBox="0 0 640 140" role="img" aria-label="Gmail to Pub/Sub to Groq AI to Slack flow">
+          <defs><linearGradient id="fg" gradientUnits="userSpaceOnUse" x1="95" y1="0" x2="545" y2="0"><stop offset="0" stop-color="#f472b6"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs>
+          <path class="flow-line" d="M95 70 H205 M305 70 H395 M495 70 H545" />
+          <g class="node"><rect x="10" y="40" width="85" height="60" rx="12"/><text x="52" y="76">Gmail</text></g>
+          <g class="node"><rect x="205" y="40" width="100" height="60" rx="12"/><text x="255" y="76">Pub/Sub</text></g>
+          <g class="node"><rect x="395" y="40" width="100" height="60" rx="12"/><text x="445" y="76">Groq AI</text></g>
+          <g class="node"><rect x="545" y="40" width="85" height="60" rx="12"/><text x="587" y="76">Slack</text></g>
+        </svg>
+      </article>
+
+      <article class="project">
+        <div class="project-text">
+          <span class="mono when">2024 · Vue · Vuetify · Node · MongoDB</span>
+          <h3>Cloud Kitchen SaaS</h3>
+          <p>Multi-tenant platform with separate customer and merchant portals, subscription plans, and JWT-backed role-based access control.</p>
+        </div>
+        <div class="roles mono"><span>customer</span><span>merchant</span><span>admin</span></div>
+      </article>
+    </section>
+
+    <!-- STACK -->
+    <section class="stack" id="stack">
+      <div class="section-tag mono">05 · Toolbox</div>
+      <div class="marquee mono" aria-label="Tech stack">
+        <div class="marquee-track">
+          <span>JavaScript</span><span>Vue.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Redis</span><span>REST</span><span>Webhooks</span><span>OAuth 2.0</span><span>JWT</span><span>MySQL</span><span>Java</span><span>Git</span><span>Vercel</span>
+          <span>JavaScript</span><span>Vue.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Redis</span><span>REST</span><span>Webhooks</span><span>OAuth 2.0</span><span>JWT</span><span>MySQL</span><span>Java</span><span>Git</span><span>Vercel</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-tag mono">06 · Delivered ✓</div>
+      <h2 class="reveal">Have something worth <em>shipping?</em></h2>
+      <a class="magnet" href="mailto:abishekkumar.m.s.25@gmail.com"><span>Let's talk</span></a>
+      <div class="links mono">
+        <a href="mailto:abishekkumar.m.s.25@gmail.com">abishekkumar.m.s.25@gmail.com</a>
+        <a href="https://www.linkedin.com/in/abishekkumarms" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="resume.pdf" download="Abishekkumar_MS_Resume.pdf">Resume ↓</a>
+        <a href="https://github.com/Abishekkkumar" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mono">© 2026 Abishekkumar M S · built with Three.js &amp; too much coffee</footer>
+</body>
+</html>
